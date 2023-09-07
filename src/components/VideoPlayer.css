@@ -1,0 +1,35 @@
+/* VideoPlayer.css (or your preferred CSS file) */
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .paper {
+    padding: 10px;
+    border: 2px solid black;
+    margin: 10px;
+  }
+  
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h5 {
+    margin-bottom: 10px;
+  }
+  
+  .video {
+    width: 550px;
+  }
+  
+  @media (max-width: 600px) {
+    .video {
+      width: 300px;
+    }
+  }
+
+  
