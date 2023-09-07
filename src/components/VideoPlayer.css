@@ -19,11 +19,14 @@
   }
   
   h5 {
+    padding: 5px;
+    color: whitesmoke;
     margin-bottom: 10px;
   }
   
   .video {
     width: 550px;
+    border-radius: 5px;
   }
   
   @media (max-width: 600px) {

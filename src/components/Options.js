@@ -32,7 +32,8 @@ const Sidebar = ({ children }) => {
                 </Button>
               ) : (
                 <Button className="call" onClick={() => callUser(idToCall)}>
-                  Call
+                  <img src="https://cdn-icons-png.flaticon.com/512/4188/4188698.png" />
+                  
                 </Button>
               )}
             </div>

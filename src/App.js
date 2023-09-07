@@ -11,9 +11,11 @@ const App = () => {
         <h2 className="app-title">Video Chat</h2>
       </div>
       <VideoPlayer />
+      <div className="custom-dropdown">
       <Sidebar>
       <Notifications />
       </Sidebar>
+      </div>
       
       
     </div>    

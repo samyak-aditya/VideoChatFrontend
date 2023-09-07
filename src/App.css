@@ -4,13 +4,14 @@ body {
     rgba(0, 0, 0, 0.3), 
     rgba(0, 0, 0, 0.3)
   ),
-  url(https://i..pinimg.com/originals/8f/14/57/8f14578ef69a4c53352955d1e072eda6.png);
+  url(https://img.freepik.com/free-photo/solid-navy-blue-concrete-textured-wall_53876-124584.jpg?w=1060&amp;t=st=1694108398~exp=1694108998~hmac=7534856e7c24d951c507ba467acbea44cd5504a71d3be9ab47a361f0e4e8c54b);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 
 * {
+  
   margin: 0;
   padding: 0;
 }
@@ -53,3 +54,28 @@ body {
 
   /* Add your notification styles here */
 
+/* App.css */
+
+/* Style for the round button */
+.round-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%; /* Makes the button round */
+  padding: 10px;
+  font-size: 24px; /* Adjust the font size as needed */
+  cursor: pointer;
+}
+
+/* Style for the sidebar container */
+.sidebar-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px; /* Adjust the width as needed */
+  height: 100%;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+}

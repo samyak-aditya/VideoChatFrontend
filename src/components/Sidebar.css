@@ -23,6 +23,8 @@
   }
   
   .padding {
+    justify-content: center;
+    justify-items: center;
     padding: 20px;
   }
   
@@ -45,10 +47,16 @@
   }
   
   button.call {
-    background-color: #2196F3; /* Blue */
+    border-radius: 50%; /* Makes the button round (circle) */
+  width: 30px; /* Set the desired width */
+  height: 61px; /* Set the desired height */
+    background-color: #1f8ce6; /* Blue */
   }
   
   button.hang-up {
+    border-radius: 50%; /* Makes the button round (circle) */
+  width: 30px; /* Set the desired width */
+  height: 61px;
     background-color: #f44336; /* Red */
   }
   
@@ -61,3 +69,7 @@
     margin-top: 20px;
   }
   
+  img {
+    height: 30px;
+    width: 30px;
+  }
