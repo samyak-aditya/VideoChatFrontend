@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState,useContext } from 'react';
 import Sidebar from './Options';
 import Notifications from './Notifications';
 import './Add.css';
+import { SocketContext } from '../SocketContext';
 
 const Add = () => {
   const [isPopupVisible, setPopupVisible] = useState(false);
+  const { answerCall, call, callAccepted } = useContext(SocketContext);
+
 
   // Function to open the popup
   const openPopup = () => {
@@ -24,8 +27,11 @@ const Add = () => {
     }
   };
 
+  
+ 
   // Render the component
   return (
+    
     <div>
       <button className='add' onClick={openPopup}>
         <img src = "https://cdn-icons-png.flaticon.com/512/258/258365.png" />
@@ -34,9 +40,9 @@ const Add = () => {
         <div className="popup-content">
           <span className="close" onClick={closePopup}>&times;</span>
           <Sidebar>
-            <Notifications />
+            
           </Sidebar>
-          <p>This is a simple React popup using DOM manipulation.</p>
+          
         </div>
       </div>
     </div>

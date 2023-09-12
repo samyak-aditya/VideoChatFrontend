@@ -1,9 +1,11 @@
 import React, { useContext } from 'react';
 import { SocketContext } from '../SocketContext';
 import './VideoPlayer.css';
+import { Button } from '@mui/material';
+
 
 const VideoPlayer = () => {
-  const { name, callAccepted, myVideo, userVideo, callEnded, stream, call } = useContext(SocketContext);
+  const { name, callAccepted, myVideo, userVideo, callEnded, stream, call,leaveCall } = useContext(SocketContext);
 
   return (
     <div className="grid-container">
@@ -22,6 +24,11 @@ const VideoPlayer = () => {
             
             <video playsInline ref={userVideo} autoPlay className="video" />
             <h5>{call.name || 'Name'}</h5>
+            {callAccepted && !callEnded ? (
+                <Button className="hang-up" onClick={leaveCall}>
+                  <img src="https://cdn-icons-png.flaticon.com/512/5994/5994568.png" className='hangupicon'/>
+                </Button>
+              ) : null}
           </div>
         </div>
       )}

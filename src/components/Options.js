@@ -28,7 +28,7 @@ const Sidebar = ({ children }) => {
               <input type="text" placeholder="ID to call" value={idToCall} onChange={(e) => setIdToCall(e.target.value)} />
               {callAccepted && !callEnded ? (
                 <Button className="hang-up" onClick={leaveCall}>
-                  Hang Up
+                  <img src="https://cdn-icons-png.flaticon.com/512/5994/5994568.png"  />
                 </Button>
               ) : (
                 <Button className="call" onClick={() => callUser(idToCall)}>

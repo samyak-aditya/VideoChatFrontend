@@ -1,14 +1,4 @@
-body {
-  background:
-  linear-gradient(
-    rgba(0, 0, 0, 0.3), 
-    rgba(0, 0, 0, 0.3)
-  ),
-  url(https://img.freepik.com/free-photo/solid-navy-blue-concrete-textured-wall_53876-124584.jpg?w=1060&amp;t=st=1694108398~exp=1694108998~hmac=7534856e7c24d951c507ba467acbea44cd5504a71d3be9ab47a361f0e4e8c54b);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
+
 
 * {
   
@@ -20,6 +10,7 @@ body {
 
 /* Custom styles for the wrapper */
 .wrapper {
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +19,8 @@ body {
 
 /* Custom styles for the app bar */
 .app-bar {
-  border-radius: 15px;
+  color:aquamarine;
+  border-radius: 15px grey;
   margin: 30px 100px;
   display: flex;
   flex-direction: row;
@@ -47,6 +39,7 @@ body {
 
 /* Custom styles for the app title */
 .app-title {
+  
   margin-left: 15px;
 }
 
@@ -79,3 +72,20 @@ body {
   z-index: 1;
   overflow-y: auto; /* Enable vertical scrolling if needed */
 }
+
+/* styles.css */
+
+/* Style the notifications container */
+.notification-container {
+  position: fixed; /* Fixed position to keep it at the top */
+  top: 0; /* Position it at the top of the viewport */
+  right: 0; /* Position it at the right edge of the viewport */
+  z-index: 9999; /* Ensure it appears above other content */
+  padding: 16px; /* Add some padding for spacing */
+}
+
+/* Style individual notifications */
+.notification {
+  margin-bottom: 8px; /* Add spacing between notifications */
+}
+

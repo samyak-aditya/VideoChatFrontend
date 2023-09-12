@@ -8,7 +8,7 @@
   
   .paper {
     padding: 10px;
-    border: 2px solid black;
+    border: 2px solid bisque;
     margin: 10px;
   }
   
@@ -27,11 +27,43 @@
   .video {
     width: 550px;
     border-radius: 5px;
+    border-color: bisque;
   }
   
   @media (max-width: 600px) {
     .video {
       width: 300px;
+    }
+  }
+
+  .hangupicon{
+    width: 44px;
+    height: 44px;
+    
+  }
+
+  .hang-up :hover{
+    animation: shake 1s ease-in-out infinite;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(-5px);
+    }
+    40% {
+      transform: translateX(5px);
+    }
+    60% {
+      transform: translateX(-5px);
+    }
+    80% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
     }
   }
 

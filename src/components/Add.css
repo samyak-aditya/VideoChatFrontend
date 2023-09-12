@@ -35,8 +35,8 @@ body {
 
 .add {
     display: inline-block;
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
     background-color: #0074d9; /* Blue color */
     color: #fff; /* White text color */
     border: none;
